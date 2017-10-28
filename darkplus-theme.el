@@ -40,7 +40,7 @@
        (builtin "#569CD6")   ;; dark-blue
        (keyword "#C586C0")   ;; pink
        (const   "#9CDCFE")   ;; light-blue
-       (comment "#608B4E")   ;; green
+       (comment "#505050")   ;; green
        (func    "#DCDCAA")   ;; yellow
        (str     "#CE9178")   ;; orange
        (type    "#4EC9B0")   ;; seafoam
