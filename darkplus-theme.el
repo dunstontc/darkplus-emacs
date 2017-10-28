@@ -48,7 +48,7 @@
        (warning "#F44747")
        (warning2 "#D16969"))
    (custom-theme-set-faces
-   'DarkPloos
+   'darkplus
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -244,10 +244,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'DarkPloos)
+(provide-theme 'darkplus)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; DarkPloos-theme.el ends here
+;;; darkplus.el ends here
