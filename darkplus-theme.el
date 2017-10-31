@@ -44,11 +44,11 @@
        (dp_light_red     "#d16969")
        (dp_dark_red      "#f44747")
 
-       (dp_fg1 "#d4d4d4")       ;; text
+       (fg1 "#d4d4d4")       ;; text
        (fg2 "#c3c3c3")
        (fg3 "#b2b2b2")
        (fg4 "#a1a1a1")
-       (dp_bg1 "#1E1E1E")       ;; background
+       (bg1 "#1E1E1E")       ;; background
        (bg2 "#303030")
        (bg3 "#424242")
        (bg4 "#545454")
