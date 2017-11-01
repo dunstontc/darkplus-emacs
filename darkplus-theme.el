@@ -97,11 +97,12 @@
     ;; GENERAL
     `(cursor                   ((,class (:background ,dp_bright_blue                   ))))
     `(mouse                    ((,class (:background ,dp_select_blue                   ))))
+    `(region                   ((,class (:background ,dp_select_blue                   ))))
     `(highlight                ((,class (:foreground ,fg3 :background ,dp_select_blue  ))))
     `(hl-line                  ((,class (:background ,bg2                              ))))
+    `(highlight-numbers-number ((,class (:foreground ,dp_puke                          ))))
     `(line-number              ((,class (:background ,bg2                              ))))
     `(line-number-current-line ((,class (:background ,bg2                              ))))
-    `(region                   ((,class (:background ,dp_select_blue                   ))))
 	  `(fringe                   ((,class (:background ,dp_background :foreground ,fg4   ))))
     `(show-paren-match-face    ((,class (:background ,warning                          ))))
     `(isearch                  ((,class (:foreground ,warning :background ,bg3 :bold t ))))
@@ -115,8 +116,8 @@
     `(info-string              ((,class (:foreground ,str                              ))))
     `(icompletep-determined    ((,class  :foreground ,builtin                          )))
     `(ffap                     ((,class (:foreground ,fg4                              ))))
-    `(lazy-highlight           ((,class (:foreground ,fg2 :background ,bg3))))
-    `(trailing-whitespace      ((,class  :foreground nil  :background ,warning)))
+    `(lazy-highlight           ((,class (:foreground ,fg2 :background ,bg3             ))))
+    `(trailing-whitespace      ((,class  :foreground nil  :background ,warning         )))
 
     ;; UI
     `(widget-button               ((,class (:foreground ,dp_seafoam ))))
@@ -181,12 +182,12 @@
 
 
     ;; MODE LINE
-    `(mode-line                    ((,class (:foreground ,fg4           :background nil :bold t          ))))
-    `(mode-line-inactive           ((,class (:foreground ,var           :background nil :weight normal   ))))
-    `(mode-line-buffer-id          ((,class (:foreground ,dp_foreground :background nil :bold t          ))))
-    `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1           :background nil                  ))))
-    `(mode-line-highlight          ((,class (:foreground ,keyword       :background nil :weight bold     ))))
-    `(mode-line-emphasis           ((,class (:foreground ,fg1           :background nil                  ))))
+    `(mode-line                    ((,class (:foreground ,fg4           :background ,dp_background :bold t  ))))
+    `(mode-line-inactive           ((,class (:foreground ,var           :background nil :weight normal      ))))
+    `(mode-line-buffer-id          ((,class (:foreground ,dp_background :background nil :bold t             ))))
+    `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1           :background nil                     ))))
+    `(mode-line-highlight          ((,class (:foreground ,keyword       :background nil :weight bold        ))))
+    `(mode-line-emphasis           ((,class (:foreground ,fg1           :background nil                     ))))
 
     ;; MODE SUPPORT: powerline
     ;; `(powerline-active1                         )
