@@ -87,23 +87,22 @@
     `(font-lock-variable-name-face ((,class (:foreground ,var    ))))
     `(font-lock-warning-face       ((,class (:foreground ,warning :background ,bg2))))
 
-    `(region                ((,class (:background ,fg1 :foreground ,bg1))))
+    `(cursor                ((,class (:background ,bg3))))
     `(highlight             ((,class (:foreground ,fg3 :background ,bg3))))
     `(hl-line               ((,class (:background ,bg2))))
+    `(region                ((,class (:background ,fg1 :foreground ,bg1))))
 	  `(fringe                ((,class (:background ,dp_background :foreground ,fg4))))
-    `(cursor                ((,class (:background ,bg3))))
     `(show-paren-match-face ((,class (:background ,warning))))
     `(isearch               ((,class (:bold t :foreground ,warning :background ,bg3))))
     `(mode-line             ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
     `(mode-line-inactive    ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,var :background ,bg1 :weight normal))))
     `(mode-line-buffer-id   ((,class (:bold t :foreground ,func :background nil))))
-    `(Umode-line-highlight   ((,class (:foreground ,keyword :box nil :weight bold))))
+    `(mode-line-highlight   ((,class (:foreground ,keyword :box nil :weight bold))))
     `(mode-line-emphasis    ((,class (:foreground ,fg1))))
     `(vertical-border       ((,class (:foreground ,fg3))))
     `(minibuffer-prompt     ((,class (:bold t :foreground ,keyword))))
     `(default-italic        ((,class (:italic t))))
-    `(link                  ((,class (:foreground ,const :underline t))))
-    `(nil                   ((,class (:foreground ,dp_dark_blue))))
+    `(link                  ((,class (:foreground ,dp_light_blue :underline t))))
 
     `(warning               ((,class (:foreground ,warning))))
     `(ac-completion-face    ((,class (:underline t :foreground ,keyword))))
@@ -148,9 +147,9 @@
     `(git-gutter:unchanged      ((,class (:foreground ,dp_background))))
 
     ;; MODE SUPPORT: git-gutter-fr
-    `(git-gutter-fr:added       (:inherit 'git-gutter:added))
-    `(git-gutter-fr:deleted     (:inherit 'git-gutter:deleted))
-    `(git-gutter-fr:modified    (:inherit 'git-gutter:modified))
+    `(git-gutter-fr:added       ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter-fr:deleted     ((,class (:foreground ,dp_dark_red))))
+    `(git-gutter-fr:modified    ((,class (:foreground ,dp_pink))))
 
 
     `(font-latex-bold-face                ((,class (:foreground ,type))))
