@@ -181,12 +181,12 @@
 
 
     ;; MODE LINE
-    `(mode-line                    ((,class (:foreground ,fg4           :background ,bg2 :bold t          ))))
-    `(mode-line-inactive           ((,class (:foreground ,var           :background ,bg1 :weight normal   ))))
-    `(mode-line-buffer-id          ((,class (:foreground ,dp_foreground :background nil  :bold t ))))
-    `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1                                   ))))
-    `(mode-line-highlight          ((,class (:foreground ,keyword :weight bold  :box nil        ))))
-    `(mode-line-emphasis           ((,class (:foreground ,fg1                                   ))))
+    `(mode-line                    ((,class (:foreground ,fg4           :background nil :bold t          ))))
+    `(mode-line-inactive           ((,class (:foreground ,var           :background nil :weight normal   ))))
+    `(mode-line-buffer-id          ((,class (:foreground ,dp_foreground :background nil :bold t          ))))
+    `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1           :background nil                  ))))
+    `(mode-line-highlight          ((,class (:foreground ,keyword       :background nil :weight bold     ))))
+    `(mode-line-emphasis           ((,class (:foreground ,fg1           :background nil                  ))))
 
     ;; MODE SUPPORT: powerline
     ;; `(powerline-active1                         )
