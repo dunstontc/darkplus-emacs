@@ -184,7 +184,7 @@
     ;; MODE LINE
     `(mode-line                    ((,class (:foreground ,fg4           :background ,dp_background :bold t  ))))
     `(mode-line-inactive           ((,class (:foreground ,var           :background nil :weight normal      ))))
-    `(mode-line-buffer-id          ((,class (:foreground ,dp_background :background ,dp_grey3 :bold t       ))))
+    `(mode-line-buffer-id          ((,class (:foreground ,dp_grey8      :background nil :bold t       ))))
     `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1           :background nil                     ))))
     `(mode-line-highlight          ((,class (:foreground ,keyword       :background nil :weight bold        ))))
     `(mode-line-emphasis           ((,class (:foreground ,fg1           :background nil                     ))))
