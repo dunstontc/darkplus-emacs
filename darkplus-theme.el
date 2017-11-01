@@ -158,26 +158,26 @@
     `(org-sexp-date                ((,class (:foreground ,fg4                             ))))
 
     ;; MODE SUPPORT: git-gutter
-    `(git-gutter:added               ((,class (:foreground ,dp_green))))
-    `(git-gutter:deleted             ((,class (:foreground ,dp_dark_red))))
-    `(git-gutter:modified            ((,class (:foreground ,dp_pink))))
-    `(git-gutter:separator           ((,class (:foreground ,dp_background))))
-    `(git-gutter:unchanged           ((,class (:foreground ,dp_background))))
+    `(git-gutter:added               ((,class (:foreground ,dp_green      ))))
+    `(git-gutter:deleted             ((,class (:foreground ,dp_dark_red   ))))
+    `(git-gutter:modified            ((,class (:foreground ,dp_pink       ))))
+    `(git-gutter:separator           ((,class (:foreground ,dp_background ))))
+    `(git-gutter:unchanged           ((,class (:foreground ,dp_background ))))
     ;; MODE SUPPORT: git-gutter-fr
-    `(git-gutter-fr:added            ((,class (:foreground ,dp_green))))
-    `(git-gutter-fr:deleted          ((,class (:foreground ,dp_dark_red))))
-    `(git-gutter-fr:modified         ((,class (:foreground ,dp_pink))))
+    `(git-gutter-fr:added            ((,class (:foreground ,dp_green      ))))
+    `(git-gutter-fr:deleted          ((,class (:foreground ,dp_dark_red   ))))
+    `(git-gutter-fr:modified         ((,class (:foreground ,dp_pink       ))))
     ;; MODE SUPPORT: git-gutter+
-    `(git-gutter+-commit-header-face ((,class (:foreground ,dp_foreground))))
-    `(git-gutter+-added              ((,class (:foreground ,dp_green))))
-    `(git-gutter+-deleted            ((,class (:foreground ,dp_dark_red))))
-    `(git-gutter+-modified           ((,class (:foreground ,dp_pink))))
-    `(git-gutter+-separator          ((,class (:foreground ,dp_foreground))))
-    `(git-gutter+-unchanged          ((,class (:foreground ,dp_foreground))))
+    `(git-gutter+-commit-header-face ((,class (:foreground ,dp_foreground ))))
+    `(git-gutter+-added              ((,class (:foreground ,dp_green      ))))
+    `(git-gutter+-deleted            ((,class (:foreground ,dp_dark_red   ))))
+    `(git-gutter+-modified           ((,class (:foreground ,dp_pink       ))))
+    `(git-gutter+-separator          ((,class (:foreground ,dp_foreground ))))
+    `(git-gutter+-unchanged          ((,class (:foreground ,dp_foreground ))))
     ;; MODE SUPPORT: git-gutter-fr+
-    `(git-gutter-fr+-added           ((,class (:foreground ,dp_green))))
-    `(git-gutter-fr+-deleted         ((,class (:foreground ,dp_dark_red))))
-    `(git-gutter-fr+-modified        ((,class (:foreground ,dp_pink))))
+    `(git-gutter-fr+-added           ((,class (:foreground ,dp_green      ))))
+    `(git-gutter-fr+-deleted         ((,class (:foreground ,dp_dark_red   ))))
+    `(git-gutter-fr+-modified        ((,class (:foreground ,dp_pink       ))))
 
 
     ;; MODE LINE
@@ -377,7 +377,6 @@
     `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
     `(jde-java-font-lock-number-face    ((t (:foreground ,var))))))
 
-    `(slime-repl-inputed-output-face       ((,class (:foreground ,type))))
 
 
 ;;;###autoload
