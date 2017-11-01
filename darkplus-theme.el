@@ -80,7 +80,7 @@
     `(font-lock-builtin-face              ((,class (:foreground ,builtin  ))))
     `(font-lock-comment-delimiter-face    ((,class (:foreground ,comment  ))))
     `(font-lock-comment-face              ((,class (:foreground ,comment  ))))
-	  `(font-lock-constant-face             ((,class (:foreground ,dp_puke  ))))
+	  `(font-lock-constant-face             ((,class (:foreground ,dp_bright_blue  ))))
     `(font-lock-doc-face                  ((,class (:foreground ,comment  ))))
     `(font-lock-function-name-face        ((,class (:foreground ,func     ))))
     `(font-lock-keyword-face              ((,class (:foreground ,dp_pink :bold ,class))))
@@ -95,7 +95,7 @@
     `(font-lock-warning-face              ((,class (:foreground ,warning :background ,bg2))))
 
     ;; GENERAL
-    `(cursor                   ((,class (:background ,bg3                              ))))
+    `(cursor                   ((,class (:background ,dp_select_blue                   ))))
     `(mouse                    ((,class (:background ,dp_select_blue                   ))))
     `(highlight                ((,class (:foreground ,fg3 :background ,dp_select_blue  ))))
     `(hl-line                  ((,class (:background ,bg2                              ))))
