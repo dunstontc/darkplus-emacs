@@ -85,7 +85,7 @@
     `(font-lock-function-name-face        ((,class (:foreground ,func     ))))
     `(font-lock-keyword-face              ((,class (:foreground ,dp_pink :bold ,class))))
     `(font-lock-negation-char-face        ((,class (:foreground ,const    ))))
-    `(font-lock-preprocessor-face         ((,class (:foreground ,dp_foreground))))
+    `(font-lock-preprocessor-face         ((,class (:foreground ,dp_dark_blue))))
     `(font-lock-reference-face            ((,class (:foreground ,const    ))))
     `(font-lock-regexp-grouping-backslash ((,class (:foreground ,dp_light_red      ))))
     `(font-lock-regexp-grouping-construct ((,class (:foreground ,dp_light_red      ))))
@@ -95,7 +95,7 @@
     `(font-lock-warning-face              ((,class (:foreground ,warning :background ,bg2))))
 
     ;; GENERAL
-    `(cursor                   ((,class (:background ,dp_select_blue                   ))))
+    `(cursor                   ((,class (:background ,dp_bright_blue                   ))))
     `(mouse                    ((,class (:background ,dp_select_blue                   ))))
     `(highlight                ((,class (:foreground ,fg3 :background ,dp_select_blue  ))))
     `(hl-line                  ((,class (:background ,bg2                              ))))
