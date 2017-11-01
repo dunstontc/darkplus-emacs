@@ -37,7 +37,7 @@
        (dp_dark_blue     "#569cd6")
        (dp_bright_blue   "#007acc")
        (dp_seafoam       "#4ec9b0")
-       (dp_comment_green "#608b4e")
+       (dp_green         "#608b4e")
        (dp_puke          "#b5cea8")
        (dp_yellow        "#dcdcaa")
        (dp_dark_yellow   "#d7ba7d")
@@ -82,7 +82,7 @@
 	  `(font-lock-constant-face      ((,class (:foreground ,dp_puke  ))))
     `(font-lock-doc-face           ((,class (:foreground ,comment  ))))
     `(font-lock-function-name-face ((,class (:foreground ,func     ))))
-    `(font-lock-keyword-face       ((,class (:foreground ,keyword :bold ,class))))
+    `(font-lock-keyword-face       ((,class (:foreground ,dp_dark_blue :bold ,class))))
     `(font-lock-string-face        ((,class (:foreground ,str      ))))
     `(font-lock-type-face          ((,class (:foreground ,type     ))))
     `(font-lock-variable-name-face ((,class (:foreground ,var      ))))
@@ -112,8 +112,8 @@
     `(icompletep-determined ((,class  :foreground ,builtin)))
 
     `(org-agenda-structure         ((,class (:foreground ,fg3 :background ,bg3 :weight bold :box (:color ,fg4)))))
-    `(org-agenda-date              ((,class (:foreground ,var :height 1.1                 ))))
-    `(org-agenda-date-weekend      ((,class (:foreground ,fg4 :weight normal              ))))
+    `(org-agenda-date              ((,class (:foreground ,var     :height 1.1             ))))
+    `(org-agenda-date-weekend      ((,class (:foreground ,fg4     :weight normal          ))))
     `(org-agenda-date-today        ((,class (:foreground ,keyword :weight bold :height 1.4))))
     `(org-agenda-done              ((,class (:foreground ,bg4                             ))))
     `(org-block                    ((,class (:foreground ,fg3                             ))))
@@ -124,8 +124,8 @@
     `(org-hide                     ((,class (:foreground ,fg4                             ))))
     `(org-level-1                  ((,class (:foreground ,dp_bright_blue :bold t :height 1.1))))
     `(org-level-2                  ((,class (:foreground ,dp_dark_blue   :bold nil        ))))
-    `(org-level-3                  ((,class (:foreground ,fg4            :bold t          ))))
-    `(org-level-4                  ((,class (:foreground ,bg4            :bold nil        ))))
+    `(org-level-3                  ((,class (:foreground ,dp_foreground  :bold t          ))))
+    `(org-level-4                  ((,class (:foreground ,dp_foreground  :bold nil        ))))
     `(org-footnote                 ((,class (:foreground ,fg4            :underline t     ))))
     `(org-link                     ((,class (:foreground ,dp_light_blue  :underline t     ))))
     `(org-special-keyword          ((,class (:foreground ,func                            ))))
@@ -141,30 +141,53 @@
     `(org-sexp-date                ((,class (:foreground ,fg4                             ))))
 
     ;; MODE SUPPORT: git-gutter
-    `(git-gutter:added          ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter:added          ((,class (:foreground ,dp_green))))
     `(git-gutter:deleted        ((,class (:foreground ,dp_dark_red))))
     `(git-gutter:modified       ((,class (:foreground ,dp_pink))))
     `(git-gutter:separator      ((,class (:foreground ,dp_background))))
     `(git-gutter:unchanged      ((,class (:foreground ,dp_background))))
 
     ;; MODE SUPPORT: git-gutter-fr
-    `(git-gutter-fr:added       ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter-fr:added       ((,class (:foreground ,dp_green))))
     `(git-gutter-fr:deleted     ((,class (:foreground ,dp_dark_red))))
     `(git-gutter-fr:modified    ((,class (:foreground ,dp_pink))))
 
     ;; MODE SUPPORT: git-gutter+
     `(git-gutter+-commit-header-face     ((,class (:foreground ,dp_foreground))))
-    `(git-gutter+-added                  ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter+-added                  ((,class (:foreground ,dp_green))))
     `(git-gutter+-deleted                ((,class (:foreground ,dp_dark_red))))
     `(git-gutter+-modified               ((,class (:foreground ,dp_pink))))
     `(git-gutter+-separator              ((,class (:foreground ,dp_foreground))))
     `(git-gutter+-unchanged              ((,class (:foreground ,dp_foreground))))
 
     ;; MODE SUPPORT: git-gutter-fr+
-    `(git-gutter-fr+-added       ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter-fr+-added       ((,class (:foreground ,dp_green))))
     `(git-gutter-fr+-deleted     ((,class (:foreground ,dp_dark_red))))
     `(git-gutter-fr+-modified    ((,class (:foreground ,dp_pink))))
 
+    ;; MODE SUPPORT: powerline
+    ;; `(powerline-active1                         )
+    ;; `(powerline-active2                         )
+    ;; `(powerline-inactive1                       )
+    ;; `(powerline-inactive2                       )
+
+    ;; MODE SUPPORT: smart-mode-line
+    ;; `(sml/modes                                 )
+    ;; `(sml/minor-modes                           )
+    ;; `(sml/filename                              )
+    ;; `(sml/prefix                                )
+    ;; `(sml/git                                   )
+    ;; `(sml/process                               )
+    ;; `(sml/sudo                                  )
+    ;; `(sml/read-only                             )
+    ;; `(sml/outside-modified                      )
+    ;; `(sml/modified                              )
+    ;; `(sml/vc                                    )
+    ;; `(sml/vc-edited                             )
+    ;; `(sml/charging                              )
+    ;; `(sml/discharging                           )
+    ;; `(sml/col-number                            )
+    ;; `(sml/position-percentage                   )
 
     `(font-latex-bold-face                ((,class (:foreground ,type))))
     `(font-latex-italic-face              ((,class (:foreground ,var :italic t))))
@@ -237,11 +260,11 @@
 
     `(lazy-highlight ((,class (:foreground ,fg2 :background ,bg3))))
 
-    `(term               ((,class (:foreground ,fg1     :background ,bg1))))
+    `(term               ((,class (:foreground ,dp_foreground :background ,dp_background))))
     `(term-color-black   ((,class (:foreground ,bg3     :background ,bg3))))
     `(term-color-blue    ((,class (:foreground ,func    :background ,func))))
     `(term-color-red     ((,class (:foreground ,keyword :background ,bg3))))
-    `(term-color-green   ((,class (:foreground ,type    :background ,bg3))))
+    `(term-color-green   ((,class (:foreground ,dp_green   :background ,bg3))))
     `(term-color-yellow  ((,class (:foreground ,var     :background ,var))))
     `(term-color-magenta ((,class (:foreground ,builtin :background ,builtin))))
     `(term-color-cyan    ((,class (:foreground ,str     :background ,str))))
