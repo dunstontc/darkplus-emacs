@@ -36,6 +36,7 @@
        (dp_light_blue    "#9cdcfe")
        (dp_dark_blue     "#569cd6")
        (dp_bright_blue   "#007acc")
+       (dp_select_blue   "#264f78")
        (dp_seafoam       "#4ec9b0")
        (dp_green         "#608b4e")
        (dp_puke          "#b5cea8")
@@ -73,7 +74,7 @@
        (warning2 "#D16969")) ;; light-red
   (custom-theme-set-faces
     'darkplus
-    `(default ((,class (:background ,bg1 :foreground ,fg1))))
+    `(default ((,class (:background ,dp_background :foreground ,dp_foreground))))
 
     `(font-lock-builtin-face       ((,class (:foreground ,builtin  ))))
     `(font-lock-comment-face       ((,class (:foreground ,comment  ))))
@@ -104,12 +105,16 @@
     `(minibuffer-prompt     ((,class (:bold t :foreground ,keyword))))
     `(default-italic        ((,class (:italic t))))
     `(link                  ((,class (:foreground ,dp_light_blue :underline t))))
-
     `(warning               ((,class (:foreground ,warning))))
     `(ac-completion-face    ((,class (:underline t :foreground ,keyword))))
     `(info-quoted-name      ((,class (:foreground ,builtin))))
     `(info-string           ((,class (:foreground ,str))))
     `(icompletep-determined ((,class  :foreground ,builtin)))
+
+    `(widget-button               ((,class (:foreground ,dp_seafoam ))))
+
+    `(spacemacs-visual-face       ((,class (:background ,dp_select_blue ))))
+    `(mouse                       ((,class (:background ,dp_select_blue ))))
 
     `(org-agenda-structure         ((,class (:foreground ,fg3 :background ,bg3 :weight bold :box (:color ,fg4)))))
     `(org-agenda-date              ((,class (:foreground ,var     :height 1.1             ))))
@@ -190,6 +195,11 @@
     ;; `(sml/discharging                           )
     ;; `(sml/col-number                            )
     ;; `(sml/position-percentage                   )
+
+
+    `(spaceline-evil-visual                ((,class (:background ,dp_pink))))
+
+
 
     `(font-latex-bold-face                ((,class (:foreground ,type))))
     `(font-latex-italic-face              ((,class (:foreground ,var :italic t))))
@@ -272,22 +282,15 @@
     `(term-color-cyan    ((,class (:foreground ,str     :background ,str))))
     `(term-color-white   ((,class (:foreground ,fg2     :background ,fg2))))
 
-    `(helm-header             ((,class (:foreground ,fg2     :background ,bg1 :underline nil :box nil))))
-    `(helm-source-header      ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
-    `(helm-selection          ((,class (:background ,bg2     :underline nil))))
-    `(helm-selection-line     ((,class (:background ,bg2))))
-    `(helm-visible-mark       ((,class (:foreground ,bg1  :background ,bg3))))
-    `(helm-candidate-number   ((,class (:foreground ,bg1  :background ,fg1))))
-    `(helm-separator          ((,class (:foreground ,type :background ,bg1))))
-    `(helm-time-zone-current  ((,class (:foreground ,builtin :background ,bg1))))
-    `(helm-time-zone-home     ((,class (:foreground ,type :background ,bg1))))
-    `(helm-buffer-not-saved   ((,class (:foreground ,type :background ,bg1))))
-    `(helm-buffer-process     ((,class (:foreground ,builtin :background ,bg1))))
-    `(helm-buffer-saved-out   ((,class (:foreground ,fg1  :background ,bg1))))
-    `(helm-buffer-size        ((,class (:foreground ,fg1  :background ,bg1))))
-    `(helm-ff-directory       ((,class (:foreground ,func :background ,bg1 :weight bold))))
-    `(helm-ff-file            ((,class (:foreground ,fg1  :background ,bg1 :weight normal))))
-    `(helm-ff-executable      ((,class (:foreground ,var  :background ,bg1 :weight normal))))
+    `(helm-bookmark-w3m       ((,class (:foreground ,type                    ))))
+    `(helm-buffer-not-saved   ((,class (:foreground ,type     :background ,bg1))))
+    `(helm-buffer-process     ((,class (:foreground ,builtin  :background ,bg1))))
+    `(helm-buffer-saved-out   ((,class (:foreground ,fg1      :background ,bg1))))
+    `(helm-buffer-size        ((,class (:foreground ,fg1      :background ,bg1))))
+    `(helm-candidate-number   ((,class (:foreground ,bg1      :background ,fg1))))
+    `(helm-ff-directory       ((,class (:foreground ,func     :background ,bg1 :weight bold))))
+    `(helm-ff-file            ((,class (:foreground ,fg1      :background ,bg1 :weight normal))))
+    `(helm-ff-executable      ((,class (:foreground ,var      :background ,bg1 :weight normal))))
     `(helm-ff-invalid-symlink ((,class (:foreground ,warning2 :background ,bg1 :weight bold))))
     `(helm-ff-symlink         ((,class (:foreground ,keyword  :background ,bg1 :weight bold))))
     `(helm-ff-prefix          ((,class (:foreground ,bg1  :background ,keyword :weight normal))))
@@ -297,8 +300,15 @@
     `(helm-grep-lineno        ((,class (:foreground ,fg1  :background ,bg1))))
     `(helm-grep-match         ((,class (:foreground nil   :background nil :inherit helm-match))))
     `(helm-grep-running       ((,class (:foreground ,func :background ,bg1))))
-    `(helm-moccur-buffer      ((,class (:foreground ,func :background ,bg1))))
-    `(helm-bookmark-w3m       ((,class (:foreground ,type))))
+    `(helm-header             ((,class (:foreground ,fg2     :background ,bg1 :underline nil :box nil))))
+    `(helm-moccur-buffer      ((,class (:foreground ,func    :background ,bg1))))
+    `(helm-source-header      ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
+    `(helm-selection          ((,class (:background ,dp_select_blue :underline nil))))
+    `(helm-selection-line     ((,class (:background ,bg2))))
+    `(helm-separator          ((,class (:foreground ,type    :background ,bg1))))
+    `(helm-time-zone-current  ((,class (:foreground ,builtin :background ,bg1))))
+    `(helm-time-zone-home     ((,class (:foreground ,type    :background ,bg1))))
+    `(helm-visible-mark       ((,class (:foreground ,bg1     :background ,bg3))))
     `(helm-source-go-package-godoc-description      ((,class (:foreground ,str))))
 
     `(company-echo-common    ((,class (:foreground ,bg1 :background ,fg1))))
