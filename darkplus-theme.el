@@ -90,7 +90,7 @@
     `(font-lock-warning-face       ((,class (:foreground ,warning :background ,bg2))))
 
     `(cursor                ((,class (:background ,bg3))))
-    `(highlight             ((,class (:foreground ,fg3 :background ,bg3))))
+    `(highlight             ((,class (:foreground ,fg3 :background ,dp_select_blue))))
     `(hl-line               ((,class (:background ,bg2))))
     `(region                ((,class (:background ,fg1 :foreground ,bg1))))
 	  `(fringe                ((,class (:background ,dp_background :foreground ,fg4))))
