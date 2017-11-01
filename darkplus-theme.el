@@ -97,7 +97,7 @@
     `(mode-line             ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
     `(mode-line-inactive    ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,var :background ,bg1 :weight normal))))
     `(mode-line-buffer-id   ((,class (:bold t :foreground ,func :background nil))))
-    `Umode-line-highlight   ((,class (:foreground ,keyword :box nil :weight bold))))
+    `(Umode-line-highlight   ((,class (:foreground ,keyword :box nil :weight bold))))
     `(mode-line-emphasis    ((,class (:foreground ,fg1))))
     `(vertical-border       ((,class (:foreground ,fg3))))
     `(minibuffer-prompt     ((,class (:bold t :foreground ,keyword))))
