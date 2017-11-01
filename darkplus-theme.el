@@ -151,6 +151,19 @@
     `(git-gutter-fr:deleted     ((,class (:foreground ,dp_dark_red))))
     `(git-gutter-fr:modified    ((,class (:foreground ,dp_pink))))
 
+    ;; MODE SUPPORT: git-gutter+
+    (git-gutter+-commit-header-face     ((,class (:foreground ,dp_foreground))))
+    (git-gutter+-added                  ((,class (:foreground ,dp_comment_green))))
+    (git-gutter+-deleted                ((,class (:foreground ,dp_dark_red))))
+    (git-gutter+-modified               ((,class (:foreground ,dp_pink))))
+    (git-gutter+-separator              ((,class (:foreground ,dp_foreground))))
+    (git-gutter+-unchanged              ((,class (:foreground ,dp_foreground))))
+
+    ;; MODE SUPPORT: git-gutter-fr+
+    `(git-gutter-fr+-added       ((,class (:foreground ,dp_comment_green))))
+    `(git-gutter-fr+-deleted     ((,class (:foreground ,dp_dark_red))))
+    `(git-gutter-fr+-modified    ((,class (:foreground ,dp_pink))))
+
 
     `(font-latex-bold-face                ((,class (:foreground ,type))))
     `(font-latex-italic-face              ((,class (:foreground ,var :italic t))))
